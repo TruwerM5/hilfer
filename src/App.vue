@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import HeaderVue from './components/HeaderVue.vue';
 import Index from './views/index.vue';
 </script>
@@ -7,8 +6,16 @@ import Index from './views/index.vue';
 <template>
   <!-- <HelloWorld /> -->
   <HeaderVue />
-  <router-view></router-view>
+  <main class="main">
+    <router-view></router-view>
+
+  </main>
   <!-- <img src="/images/logo.png" alt="Logo"> -->
 </template>
+
+<style lang="sass" scoped>
+.main
+  padding-inline: 300px
+</style>
 
 
